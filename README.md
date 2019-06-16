@@ -6,7 +6,7 @@ Sample game by unity.
 
 # Requirement
 
- - Unity version : 2019.1.5f1
+ - Unity version : 2019.1.x
 
 # Implementation
 
