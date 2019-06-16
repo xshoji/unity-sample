@@ -1,6 +1,17 @@
 # unity-sample
 
-sample
+Sample game by unity.
+
+# Requirement
+
+ - Unity version : 2019.1.5f1
+
+# Implementation
+
+ - Display UI
+ - Switch Scene
+ - Detect collision
+ - Close application
 
 # References
 
