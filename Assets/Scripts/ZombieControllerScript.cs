@@ -19,10 +19,14 @@ public class ZombieControllerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.LookAt(player.transform.position);
+        if (Vector3.Distance(transform.position, destination) < 0.5f)
+        {
+            move();
+            transform.LookAt(destination);
+        }
     }
 
-    //オブジェクトが触れている間
+    //プレイヤーがぶつかったらリセット
     void OnTriggerEnter(Collider t)
     {
         if (t.gameObject == player)
