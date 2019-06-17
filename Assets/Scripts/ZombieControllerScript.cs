@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class ZombieControllerScript : MonoBehaviour
 {
     private Vector3 destination;
+    public int responeRatio = 5;
     public GameObject player;
 
     // Start is called before the first frame update
@@ -37,7 +38,7 @@ public class ZombieControllerScript : MonoBehaviour
 
     private void move()
     {
-        var randDestination = Random.insideUnitCircle * 6;
+        var randDestination = Random.insideUnitCircle * responeRatio;
         var x = randDestination[0];
         var y = randDestination[1];
         destination = new Vector3(x, 0.0f, y);
