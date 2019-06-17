@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ZombieControllerScript : MonoBehaviour
 {
@@ -19,6 +20,15 @@ public class ZombieControllerScript : MonoBehaviour
     void Update()
     {
         transform.LookAt(player.transform.position);
+    }
+
+    //オブジェクトが触れている間
+    void OnTriggerEnter(Collider t)
+    {
+        if (t.gameObject == player)
+        {
+            SceneManager.LoadScene("MainScene");
+        }
     }
 
     private void move()

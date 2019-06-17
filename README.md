@@ -14,6 +14,7 @@ Sample game by unity.
  - Switch Scene
  - Detect collision
  - Close application
+ - Enemy ( Zombie )
 
 # References
 
